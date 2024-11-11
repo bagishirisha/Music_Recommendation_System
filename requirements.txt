@@ -1,0 +1,7 @@
+# Python Libraries needed for running the project:
+- os
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- warnings
