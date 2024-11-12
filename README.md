@@ -6,8 +6,7 @@
 3. ***Priyabrata Samantaray***
 4. ***Gayatri Yendamury***
 
-## Project Title : 
-## **MUSIC RECOMMENDATION SYSTEM**
+## Project Title : **MUSIC RECOMMENDATION SYSTEM**
 
 ## **Problem Statement:**
 - Music streaming platforms offer millions of tracks, but users often struggle to find songs that match their choice. Existing recommendation systems are limited, often suggesting irrelevant content, leading to user disappointment and disengagement.
@@ -24,7 +23,8 @@
 Kaggle spotify dataset : https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset/data
 
 For this project, we have used below datasets:\
-*data.csv , data_by_genre.csv*
+1. Raw dataset: *data.csv , data_by_genre.csv* -Raw dataset from Kaggle
+2. Cleaned dataset: *data_cleaned.csv , genre_data_cleaned.csv* - Generated after running 02_data_preprocessing.ipynb.
 
 ### **Dataset columns description** : 
 
