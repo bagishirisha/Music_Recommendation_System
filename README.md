@@ -63,13 +63,36 @@ For this project, we have used below datasets:\
 This dataset provides a range of audio features that describe the musical characteristics and popularity metrics for each track, essential for building a recommendation system.
 
 ## Setup
-Please install all the library versions as mentioned in requirements.txt
+Please install all the needed libraries as mentioned in [requirements.txt](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/requirements.txt)
 
 ## Notebooks
-Below are the notebooks which have to be executed in order:
+The complete project is divided into different data science workflow steps as mentioned below.
+The input , output , and description is provided for all the notebooks.
+Please make sure the notebooks are run sequentially .
+
+| **Notebook**         | **Input artifacts**      | **Output artifacts**          | **Discription**     |
+| ------------------- | ------------------ | ------------------ | ------------------ |
+| [01_data_collection](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/01_data_collection.ipynb)   | data.csv , data_by_genres.csv  | None | Load the raw dataset and check overview , missing values etc..  |
+| [02_data_preprocessing](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/02_data_preprocessing.ipynb)   | data.csv , data_by_genres.csv  | data_cleaned.csv,genre_data_cleaned.csv | Perform descriptive statistics analysis , outlier handling and feature engineering.After this the cleaned dataset is stored.   |
+| [03_data_exploration](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/03_data_Exploration.ipynb)   | data_cleaned.csv,genre_data_cleaned.csv  | None | Check key observations based on popularity, observe distributions of various audio feature.Perform univariate , bivariate and trend analysis  |
+| [04_model_selection](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/04_model_selection.ipynb)   | data_cleaned.csv,genre_data_cleaned.csv  | None | Performs clustering analysis on cleaned datasets (data_cleaned.csv,genre_data_cleaned.csv) using methods like KMeans, KMedoids, Agglomerative Clustering, DBSCAN, and Gaussian Mixture. It includes steps for optimal cluster detection, clustering processes, result visualization, and a conclusion on model selection.  |
+| [05_hyperparameter_tuning](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/05_hyperparameter_tuning.ipynb)   | data_cleaned.csv,genre_data_cleaned.csv  | None | Performs hyperparameter tuning for KMeans clustering and dimensionality reduction techniques like t-SNE, and PCA. |
+| [06_model_training](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/06_model_training.ipynb)   | data_cleaned.csv,genre_data_cleaned.csv  | data_cleaned_clustering.csv , genre_data_cleaned_clustering.csv | Using K-Means clustering we analyze and group music genres and songs. It prepares clustering pipelines, applies t-SNE and PCA for dimensionality reduction, visualizes the results.Finally we store the pre-processed dataset as data_cleaned_clustering.csv , genre_data_cleaned_clustering.csv.|
+| [07_model_deployment](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/07_model_deployment.ipynb)   | data_cleaned_clustering.csv , genre_data_cleaned_clustering.csv | None | It deploys the music recommendation system based on content-based filtering, and discusses the future scope |
 
 ## Obtained results
-Below shown are few screenshots
+
+The observed metrics for KMeans clustering is as shown below:
+
+
+Below shown are few screenshots of the recommendation system :
 
 ## Future Scope
-future scope  is 
+**Real Time Processing**
+- Build user profiles, integrate real-time feedback (likes/dislikes) and apply collaborative filtering for more accurate, personalized suggestions.
+
+**Advanced Models**
+- Implement Hybrid models combining collaborative, content-based and context-aware filtering for better recommendations.
+
+**Enhanced Features**
+- Incorporate audio features, sentiment analysis of lyrics and temporal trends for better recommendations.
