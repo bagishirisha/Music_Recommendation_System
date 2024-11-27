@@ -8,7 +8,19 @@
 
 ## Project Title : **MUSIC RECOMMENDATION SYSTEM**
 
-## **Problem Statement:**
+This repo will contain Python implementation of music recommendation system using Spotify dataset.<br/>
+
+## Table of Contents
+
+* [Problem Statement](#problem-statement)
+* [Objectives](#objectives)
+* [Dataset Overview and Column Descriptions](#dataset-overview-and-column-descriptions)
+* [Setup](#setup)
+* [Notebooks](#notebooks)
+* [Obtained results](#obtained-results)
+* [Future scope](#future-scope)
+
+## Problem Statement
 - Music streaming platforms offer millions of tracks, but users often struggle to find songs that match their choice. Existing recommendation systems are limited, often suggesting irrelevant content, leading to user disappointment and disengagement.
 - A smarter, data-driven recommendation system is needed to enhance personalization and improve user experience by offering more accurate music suggestions.
 
@@ -49,3 +61,15 @@ For this project, we have used below datasets:\
 - **tempo**: Tempo of the track in beats per minute (BPM). High values indicate faster tracks, while low values indicate slower songs.
 
 This dataset provides a range of audio features that describe the musical characteristics and popularity metrics for each track, essential for building a recommendation system.
+
+## Setup
+Please install all the library versions as mentioned in requirements.txt
+
+## Notebooks
+Below are the notebooks which have to be executed in order:
+
+## Obtained results
+Below shown are few screenshots
+
+## Future Scope
+future scope  is 
