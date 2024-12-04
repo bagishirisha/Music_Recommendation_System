@@ -6,6 +6,7 @@
 3. ***Priyabrata Samantaray***
 4. ***Gayatri Yendamury***
 
+
 ## Project Title : **MUSIC RECOMMENDATION SYSTEM**
 
 This repo will contain Python implementation of music recommendation system using Spotify dataset.<br/>
@@ -80,12 +81,6 @@ Please make sure the notebooks are run sequentially .
 | [06_model_training](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/06_model_training.ipynb)   | data_cleaned.csv,genre_data_cleaned.csv  | data_cleaned_clustering.csv , genre_data_cleaned_clustering.csv | Using K-Means clustering we analyze and group music genres and songs. It prepares clustering pipelines, applies t-SNE and PCA for dimensionality reduction, visualizes the results.Finally we store the pre-processed dataset as data_cleaned_clustering.csv , genre_data_cleaned_clustering.csv.|
 | [07_model_deployment](https://github.com/bagishirisha/Music_Recommendation_System/blob/main/Code/07_model_deployment.ipynb)   | data_cleaned_clustering.csv , genre_data_cleaned_clustering.csv | None | It deploys the music recommendation system based on content-based filtering, and discusses the future scope |
 
-## Obtained results
-
-The observed metrics for KMeans clustering is as shown below:
-
-
-Below shown are few screenshots of the recommendation system :
 
 ## Future Scope
 **Real Time Processing**
